@@ -1,38 +1,110 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+	text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li.list_header {
+	text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.icon_container {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px;
+	width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.material-icons:hover {
+	cursor: pointer;
+}
+
+.ListView_container {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	list-style: none;
+}
+
+.list_container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 10px;
+	background-color: rgb(246, 246, 246);
+	align-items: center;
+}
+
+.list_img {
+	width: 10vh;
+}
+
+.list_btn {
+	appearance: none;
+	border: 0;
+	border-radius: 50px;
+	color: #ac0034;
+	padding: 8px 16px;
+	font-size: 16px;
+	min-width: 100px;
+	margin-left: 10px;
+}
+
+.list_btn:hover {
+	background: #93aa1d;
+	cursor: pointer;
+}
+
+.cardsView_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card_container {
+	background-color: rgb(246, 246, 246);
+	margin: 20px;
+	width: 25%;
+}
+
+.card_container img {
+	width: 100%;
+}
+
+.card_buy {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.card_buy_btn {
+	appearance: none;
+	border: 0;
+	border-radius: 50px;
+	color: #ac0034;
+	padding: 8px 16px;
+	font-size: 16px;
+	min-width: 100px;
+	margin-left: 10px;
+}
+
+.card_buy_btn:hover {
+	background: #93aa1d;
+	cursor: pointer;
+}
+
+.card_contend {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
